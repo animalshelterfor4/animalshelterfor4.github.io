@@ -14,6 +14,17 @@ body{
   top: 20px
 }
 
+.banner {
+  padding-top: 55px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+}
+
 .input-group {
   width: 70%;
 }
