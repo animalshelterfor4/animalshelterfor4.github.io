@@ -1,0 +1,40 @@
+
+  /* .max {
+      max-width: 1024px;
+    } */
+
+  /* @media(max-width: 996px){
+      .max{
+          display: none;
+      }
+  } */
+
+  @media(max-width: 992px) {
+    .navnav {
+      position: absolute;
+      z-index: 100;
+    }
+
+  }
+
+  .navnav {
+    max-width: 1800px;
+    /* position: absolute; */
+
+    width: 100%;
+    background-color: rgba(223, 165, 78, 0.548);
+    padding: .1rem;
+    border-radius: 5px;
+  }
+
+  .navul {
+    max-width: 1200px;
+  }
+
+  .navbar-bgcolor {
+    background-color: rgba(238, 255, 2, 0.267);
+  }
+
+  /* ---------------------------------------------------------------navbar */
+
+ 
