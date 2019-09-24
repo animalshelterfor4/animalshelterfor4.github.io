@@ -8,6 +8,13 @@ body{
     margin:0 auto; 
 }
 
+.logo img{
+  object-fit: cover;
+  width: 220px;
+  height: 54.3px;
+  border-radius: 10px;
+}
+
 .navbar-toggler {
   position: absolute;
   right: 20px;
