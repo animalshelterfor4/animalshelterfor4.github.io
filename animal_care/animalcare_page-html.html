@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <!--fontawesome-->
+
+
+    <!-- <link rel="stylesheet" href="nav+banner-css.css"> -->
+    <link rel="stylesheet" href="animalcare_page-css.css">
+    <link rel="stylesheet" href="nav+footer-css.css">
+    <!-- <link rel="stylesheet" href="footer-css.css"> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark justify-content-md-center justify-content-start fixed-top">
+            <div class="logo">
+    
+                <a class="navbar-brand sticky" href=""><img
+                        src="img/animal_shelter_logo.jpg"
+                        alt=""></a>
+    
+            </div>
+            <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+                <ul class="navbar-nav mx-auto text-md-center text-left ">
+                    <li class="nav-item col">
+                        <!-- diff : col間距 -->
+                        <a class="nav-link" href="#">關於園區</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">最新公告</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        業務專區
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">領養</a>
+                        <a class="dropdown-item" href="#">為民服務</a>
+                        <div class="dropdown-item"></div>
+                        <a class="dropdown-item" href="#">動物照護</a>
+                        </div>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">動保推廣</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">協尋日誌</a>
+                    </li>
+                </ul>
+                <form class="form-inline navbar-right ">
+                    <div class="input-group input-group-sm">
+                        <!-- diff : input-group-sm大小 -->
+                        <input type="text" class="form-control " placeholder="請輸入關鍵字">
+                        <div class="input-group-append ">
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="">
+                        <h6>English</h6>
+                    </a>
+                </form>
+                <div class="icon ">
+                <ul class="contact_group_mb">
+                    <li><a href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i id="line" class="fab fa-line"></i></a></li>
+                    <li><a href=""><i id="email" class="fas fa-envelope"></i></a></li>
+                    <li><a href=""><i id="tel" class="fas fa-phone-alt"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="contact_group_com bg-light">
+        <a href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a>
+        <br>
+        <a href=""><i id="line" class="fab fa-line"></i></a>
+        <br>
+        <a href=""><i id="email" class="fas fa-envelope"></i></a>
+        <br>
+        <a href=""><i id="tel" class="fas fa-phone-alt"></i></a>
+
+    </div>
+    <section class="animal_care_banner">
+        <img src="img/banner.jpg" alt="animal_care_banner">
+        <div class="container">
+            <div class="animal_care_banner_title">
+                <h3>動物照護</h3>
+            </div>
+        </div>
+
+
+    </section>
+    <main>
+        <section id="hospital" class="box container">
+            <div class="hospital_title">
+                <h4>台中市急診服務獸醫診療機構</h4>
+            </div>
+
+            <div class="hospital_list">
+                <div class="h_type_list">
+                    <div class="type_item">
+                        <div class="type_box"></div>
+                        <div class="type_text"></div>
+                    </div>
+                    <div class="type_item">
+                        <div class="type_box"></div>
+                        <div class="type_text"></div>
+                    </div>
+                    <div class="type_item">
+                        <div class="type_box"></div>
+                        <div class="type_text"></div>
+                    </div>
+                    <div class="type_item">
+                        <div class="type_box"></div>
+                        <div class="type_text"></div>
+                    </div>
+                    <div class="type_item">
+                        <div class="type_box"></div>
+                        <div class="type_text"></div>
+                    </div>
+                    <div class="type_item">
+                        <div class="type_box"></div>
+                        <div class="type_text"></div>
+                    </div>
+                </div>
+                <div class="h_name_list">
+                    <div id="name_group" class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">序號</th>
+                                    <th scope="col">醫院名稱</th>
+                                    <th scope="col">區域</th>
+                                    <th scope="col">醫院地址</th>
+                                    <th scope="col">醫院電話</th>
+                                    <th scope="col">急診服務</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>五福動物醫院</td>
+                                    <td>南區</td>
+                                    <td>忠明南路893-1號</td>
+                                    <td>04-22620622</td>
+                                    <td>夜間急診，需預約</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>惠犬動物醫院</td>
+                                    <td>西區</td>
+                                    <td>美村路一段631號</td>
+                                    <td>04-23730123</td>
+                                    <td>不分時段，急診電話：0919-028362</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>全國動物醫院</td>
+                                    <td>西區</td>
+                                    <td>五權八街100號</td>
+                                    <td>04-23710496</td>
+                                    <td>夜間急診，09:30 pm ~ 08:30 am</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>羅大宇動物醫院</td>
+                                    <td>西區</td>
+                                    <td>存中街153號</td>
+                                    <td>04-23728378</td>
+                                    <td>夜間急診，09:30 pm ~ 11:00 pm</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>百科動物醫院</td>
+                                    <td>西區</td>
+                                    <td>忠明南路223號</td>
+                                    <td>04-23055172</td>
+                                    <td>夜間急診，週日約診</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>中台動物醫院</td>
+                                    <td>北區</td>
+                                    <td>中清路一段693號</td>
+                                    <td>04-22922955</td>
+                                    <td>夜間急診，07:00 pm ~ 00:00 am，需預約</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>宏光動物醫院</td>
+                                    <td>北區</td>
+                                    <td>健行路588號</td>
+                                    <td>04-22033280</td>
+                                    <td>夜間急診，09:00 pm ~ 09:00 am，需預約</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>春天動物醫院</td>
+                                    <td>北區</td>
+                                    <td>進化北路294號</td>
+                                    <td>04-22350838</td>
+                                    <td>夜間急診，需預約</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>東山動物醫院</td>
+                                    <td>北屯區</td>
+                                    <td>北平路281之4號</td>
+                                    <td>04-22316574</td>
+                                    <td>24小時急診服務，週日休診</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>濟生動物醫院</td>
+                                    <td>北屯區</td>
+                                    <td>北平路三段75之12號</td>
+                                    <td>04-22385886<br>
+                                        04-22384995 </td>
+                                    <td>24小時急診服務</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subsidy" class="box">
+            <div class="mask">
+                <div id="subsidy_project" class="container">
+                    <div id="project_announce">
+                        <div id="project_title">
+                            <h4>市民犬貓絕育補助方案</h4>
+                            <div id="project_detail" class="project_content">
+                                <a id="detail_link" class="project_list" href="document-announce.pdf"><i
+                                        class="fas fa-image"></i> 臺中市108年家犬貓絕育補助申請須知</a>
+                            </div>
+                            <div id="project_process" class="project_content">
+                                <a class="project_list" href="document_process.pdf"><i class="fas fa-image"></i>
+                                    臺中市家犬貓絕育補助申請流程圖</a>
+                                <div class="process_img">
+
+                                </div>
+                            </div>
+                            <div id="project_downloads" class="project_content">
+                                <p>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <i class="fas fa-paperclip"></i> 附件下載
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        <ul class="downloads">
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/912413245954.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 臺中市108年市民自辦家犬貓絕育補助申請書</li>
+                                            </a>
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/8122716103216.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 市民自辦填寫樣本</li>
+                                            </a>
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/8122716105069.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 合格之寵物登記證樣本</li>
+                                            </a>
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/93516172627.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 108年度1月份市民自送犬貓絕育補助申請匯款名冊</li>
+                                            </a>
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/931910164132.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 108年度2月份市民自送犬貓絕育補助申請匯款名冊</li>
+                                            </a>
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/941910152852.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 108年度3月份市民自送犬貓絕育補助申請匯款名冊</li>
+                                            </a>
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/952116183694.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 108年度4月份市民自送犬貓絕育補助申請匯款名冊</li>
+                                            </a>
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/96201731237.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 108年度5月份市民自送犬貓絕育補助申請匯款名冊</li>
+                                            </a>
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/971815123386.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 108年度6月份市民自送犬貓絕育補助申請匯款名冊</li>
+                                            </a>
+                                            <a class="download_list"
+                                                href="http://www.animal.taichung.gov.tw/public/Attachment/119020/9821954519.pdf">
+                                                <li><i class="fas fa-paperclip"></i> 108年度7月份市民自送犬貓絕育補助申請匯款名冊</li>
+                                            </a>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <footer class="page-footer font-small bg-secondary ">
+        <!-- diff : 資料來源網址 -->
+        <!-- Footer -->
+        
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left ">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto ">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold">關於園區</h5>
+                        <ul class="list-unstyled text-small">
+                          <li><a class="text-white" href="#">交通位置</a></li>
+                          <!-- <li><a class="text-white" href="#">入園需知</a></li> -->
+                        </ul>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none">
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold">最新公告</h5>
+                        <!-- <ul class="list-unstyled text-small">
+                          <li><a class="text-white" href="#">台中市動保處</a></li>
+                          <li><a class="text-white" href="#">組織架構</a></li>
+                          <li><a class="text-white" href="#">行政防疫</a></li>
+                        </ul> -->
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none">
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold">業務專區</h5>
+                        <ul class="list-unstyled text-small">
+                          <li><a class="text-white" href="#">領養</a></li>
+                          <li><a class="text-white" href="#">為民服務</a></li>
+                          <li><a class="text-white" href="#">動物照護</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none">
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold">動保推廣</h5>
+                        <ul class="list-unstyled text-small">
+                          <li><a class="text-white" href="#">友善店家</a></li>
+                          <li><a class="text-white" href="#">志工招募</a></li>
+                          <li><a class="text-white" href="#">教育推廣</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mx-auto ">
+                        <h5 class="font-weight-bold">協尋日誌</h5>
+                        <ul class="list-unstyled text-small">
+                        </ul>
+                      </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </footer>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <footer class="page-footer font-small indigobg-light ">
+            <div class="footer-copyright text-center py-3 ">Copyright © 2019
+                <a class="text-dark" href="#"> 台中市動物之家
+                    版權所有
+                    此網站僅供學術研究使用</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+
+
+
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <!--Swiper-->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!--Swiper-->
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
