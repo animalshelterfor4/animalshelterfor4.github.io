@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet"><!-- diff :字體 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <!-- diff :icon-->
+    <link rel="stylesheet" href="public.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark justify-content-md-center justify-content-start fixed-top">
+        <div class="logo">
+
+            <a class="navbar-brand sticky" href=""><img
+                    src="https://www.chanchao.com.tw/exhibitorservicefiles/logo/237081_B.jpg" width="50"
+                    alt="">台中市動物之家</a>
+
+        </div>
+        <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+            <ul class="navbar-nav mx-auto text-md-center text-left ">
+                <li class="nav-item col">
+                    <!-- diff : col間距 -->
+                    <a class="nav-link" href="#">關於園區</a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link" href="#">最新公告</a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        業務專區
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">領養</a>
+                        <a class="dropdown-item" href="#">為民服務</a>
+                        <a class="dropdown-item" href="#">動物照護</a>
+                    </div>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link" href="#">動保推廣</a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link" href="#">協尋日誌</a>
+                </li>
+            </ul>
+            <form class="form-inline navbar-right ">
+                <div class="input-group input-group-sm">
+                    <!-- diff : input-group-sm大小 -->
+                    <input type="text" class="form-control " placeholder="請輸入關鍵字">
+                    <div class="input-group-append ">
+                        <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <a class="nav-link" href="">
+                    <h6>English</h6>
+                </a>
+            </form>
+            <div class="icon ">
+                <ul class="contact_group_mb  justify-content-left">
+                    <li><a href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i id="line" class="fab fa-line"></i></a></li>
+                    <li><a href=""><i id="email" class="fas fa-envelope"></i></a></li>
+                    <li><a href=""><i id="tel" class="fas fa-phone-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contract_Group -->
+    <div class="contact_group_com">
+        <a href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a>
+        <br>
+        <a href=""><i id="line" class="fab fa-line"></i></a>
+        <br>
+        <a href=""><i id="email" class="fas fa-envelope"></i></a>
+        <br>
+        <a href=""><i id="tel" class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <section>
+        <div class="banner">
+            <div class="swiper-container">
+                <!-- <img src= "https://www.koenisbv.nl/wp-content/uploads/2014/09/HEADER-BEESTEN.jpg" style='max-width: 1024px'>  -->
+                <div class="img-fluid " style="background:url('https://www.koenisbv.nl/wp-content/uploads/2014/09/HEADER-BEESTEN.jpg');
+                    background-repeat: no-repeat; background-size: cover; background-position: center center">
+                <!-- https://www.koenisbv.nl/wp-content/uploads/2014/09/HEADER-BEESTEN.jpg -->
+                <!-- https://www.ikbenzwanger.com/imagesmenu/dierennamen.jpg -->
+                    <div class="container">
+                        <span class="badge badge-warning">為民服務</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tabs" class="project-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-faq"
+                                role="tab" aria-controls="nav-faq" aria-selected="true">常見問答(FAQ)</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-law"
+                                role="tab" aria-controls="nav-law" aria-selected="false">法規資訊(LAW)</a>
+                        </div>
+                    </nav>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- 常見問答(FAQ) -->
+                        <div class="tab-pane fade show active" id="nav-faq" role="tabpanel" aria-labelledby="nav-faq-tab">
+                            <table class="table" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>問題內容</th>
+                                        <th>回覆單位</th>
+                                        <th>最後異動日期</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">1</a></td>
+                                        <td>家中寵物屍體該如何處理?</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2018-03-09</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2</a></td>
+                                        <td>如何辦理動物用藥品販賣業許可證？</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2012-07-16</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">3</a></td>
+                                        <td>哪些人需要申請動物用藥品販賣業許可證？</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2012-07-16</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">4</a></td>
+                                        <td>家中用不完的動物用藥品，可在網路上販賣給其他人嗎？</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2012-07-16</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">5</a></td>
+                                        <td>民眾可以到何處購買犬心寶預防藥、蚤不到滴劑？</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2014-05-22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">6</a></td>
+                                        <td>流浪犬如何通報捕捉呢？</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2016-03-29</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- FAQ Paging_navitation -->
+                            <div aria-label="Page navigation">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- 常見問答(FAQ) End-->
+
+                        <!-- 法規資訊(LAW) -->
+                        <div class="tab-pane fade" id="nav-law" role="tabpanel" aria-labelledby="nav-law-tab">
+                            <table class="table" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>問題內容</th>
+                                        <th>回覆單位</th>
+                                        <th>最後異動日期</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">1</a></td>
+                                        <td>行政院動物防疫畜牧相關法令</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2019-03-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2</a></td>
+                                        <td>臺中市寵物生命紀念業管理辦法</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2019-03-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">3</a></td>
+                                        <td>臺中市寵物屍體處理及寵物生命紀念業管理自治條例</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2017-12-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">4</a></td>
+                                        <td>臺中市獸醫診療機構設置標準</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2017-12-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">5</a></td>
+                                        <td>臺中市誘捕籠借用管理辦法</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2017-10-14</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">6</a></td>
+                                        <td>臺中市犬貓收容及處理收費標準</td>
+                                        <td>臺中市動物保護防疫處</td>
+                                        <td>2017-10-03</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- LAE Paging_navitation -->
+                            <div aria-label="Page navigation">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- 法規資訊(LAW) End -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small bg-secondary ">
+        <!-- diff : 資料來源網址 -->
+        <!-- Footer -->
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left ">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto ">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold">關於園區</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-white" href="#">交通位置</a></li>
+                        <!-- <li><a class="text-white" href="#">入園需知</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold">最新公告</h5>
+                    <!-- <ul class="list-unstyled text-small">
+                        <li><a class="text-white" href="#">台中市動保處</a></li>
+                        <li><a class="text-white" href="#">組織架構</a></li>
+                        <li><a class="text-white" href="#">行政防疫</a></li>
+                    </ul> -->
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold">業務專區</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-white" href="#">領養</a></li>
+                        <li><a class="text-white" href="#">為民服務</a></li>
+                        <li><a class="text-white" href="#">動物照護</a></li>
+                    </ul>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold">動保推廣</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-white" href="#">友善店家</a></li>
+                        <li><a class="text-white" href="#">志工招募</a></li>
+                        <li><a class="text-white" href="#">教育推廣</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mx-auto ">
+                    <h5 class="font-weight-bold">協尋日誌</h5>
+                    <ul class="list-unstyled text-small">
+                    </ul>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </footer>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <footer class="page-footer font-small indigobg-light ">
+        <div class="footer-copyright text-center py-3 ">Copyright © 2019
+            <a class="text-dark" href="#"> 台中市動物之家
+                版權所有
+                此網站僅供學術研究使用</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
