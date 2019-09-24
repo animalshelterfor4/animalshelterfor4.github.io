@@ -78,6 +78,35 @@ body{
 /* project-tabs end */
 
 
+/* Happiness Car Grid Divider */
+@media ( min-width: 576px ) {
+  .grid-divider {
+      align-items: center!important;
+      position: relative;
+      padding: 0;
+  }
+  .grid-divider>[class*='col-'] {
+      position: static;
+  }
+  .grid-divider>[class*='col-']:nth-child(n+2):before {
+      content: "";
+      border-left: 1px solid #DDD;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+  }
+  .col-padding {
+      padding: 0 15px;
+  }
+}
+
+.card-img{
+  height:500px;
+  width:100%;
+  object-fit: cover;
+}
+/* Happiness Car Grid Divider end*/
+
 
 .input-group {
   width: 70%;
@@ -124,8 +153,8 @@ footer .list-unstyle ul>li>a{
 }
 
 .row {
-  padding-top:70px ;
-  padding-bottom:90px ;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .list-unstyled {
