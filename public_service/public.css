@@ -156,6 +156,12 @@ footer .list-unstyle ul>li>a{
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.bg-secondary {
+  background-color: #343a40!important;
+}
+.text-white{
+  color: rgba(255,255,255,0.6)!important;
+}
 
 .list-unstyled {
   margin-top:25px ;

@@ -87,6 +87,15 @@ footer .list-unstyle ul>li>a{
   padding-top:70px ;
   padding-bottom:90px ;
 }
+.bg-secondary {
+  background-color: #343a40!important;
+}
+.text-white{
+  color:rgba(255,255,255,0.6)!important;
+}
+.font-weight-bold {
+  color: black;
+}
 
 .list-unstyled {
   margin-top:25px ;

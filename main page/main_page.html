@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>台中市動物之家-首頁</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- ---------------------------------bootstrap--------- -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <!-- ---------------------------------swiper---------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <!-- -------------------------------fontawesome--------------->
+  <link rel="stylesheet" href="position-css.css">
+  <!-- --------------------------------map css-------->
+
+
+</head>
+<style>
+  /* .max {
+      max-width: 1024px;
+    } */
+
+  /* @media(max-width: 996px){
+      .max{
+          display: none;
+      }
+  } */
+
+  @media(max-width: 992px) {
+    .navnav {
+      position: absolute;
+      z-index: 100;
+    }
+
+    #about_position iframe {
+      width: 80%;
+      height: 45vh;
+    }
+    #about_position #info_pic_A{
+      padding: 30px 50px;
+    }
+
+    #about_position #info_text{
+      padding: 30px 50px;
+    }
+
+
+
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* navbar+footer */
+  body {
+    margin: 0;
+
+  }
+
+
+
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+  }
+
+  .logo img {
+    object-fit: cover;
+    width: 220px;
+    height: 54.3px;
+    border-radius: 10px;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 20px;
+    top: 20px
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+  }
+
+  .input-group {
+    width: 70%;
+  }
+
+  nav .nav-link h6 {
+    font-size: 16px;
+  }
+
+  /* 
+  section .img-fluid { 
+    padding-top: 505px;
+    
+  } */
+  .banner {
+    padding-top: 80.3px;
+  }
+
+  .badge {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-family: 'Noto Sans TC';
+  }
+
+  .pink-text h1 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  section .pink-text p {
+    line-height: 30px;
+  }
+
+  /* section .card {
+    height: 610px;
+  } */
+
+  .pink-text h5 {
+    margin-top: 20px;
+  }
+
+  footer .list-unstyle ul>li>a {
+    flood-color: aliceblue;
+  }
+
+  .badge-2 {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
+  .list-unstyled {
+    margin-top: 25px;
+
+  }
+  
+
+  .bg-secondary {
+    background-color: #343a40 !important;
+  }
+  .text-white{
+    color: rgba(255,255,255,.6)!important;
+  }
+
+  /* <!-- diff : icon --> */
+  .contact_group_mb {
+    display: none;
+  }
+
+  .contact_group_com {
+    padding-top: 10px 0;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+    top: calc(50vh - 75px);
+
+  }
+
+  .contact_group_com a {
+    font-size: 1.5rem;
+    color: rgb(53, 78, 190);
+    margin: 0 5px;
+  }
+
+  .contact_group_com #fb,
+  #line {
+    font-size: 1.7rem;
+    padding-top: 7px;
+  }
+
+
+
+  @media(max-width:991px) {
+    .contact_group_com {
+      display: none;
+    }
+
+    .contact_group_mb {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .contact_group_mb a {
+      font-size: 1.7rem;
+      color: rgb(53, 78, 190);
+      margin: 0 15px;
+    }
+
+    .contact_group_mb #fb,
+    #line {
+      font-size: 2rem;
+      padding-top: 7px;
+    }
+  }
+
+  /* navbar+footer */
+  /* .navnav {
+    max-width: 1800px;
+
+
+    width: 100%;
+    background-color: rgba(223, 165, 78, 0.548);
+    padding: .1rem;
+    border-radius: 5px;
+  }
+
+  .navul {
+    max-width: 1200px;
+  }
+
+  .navbar-bgcolor {
+    background-color: rgba(238, 255, 2, 0.267);
+  } */
+
+  /* ---------------------------------------------------------------navbar */
+
+  .banner .news {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+
+  /* ---------------------------------------------------------------banner */
+  #education {
+    margin: 5% 0;
+  }
+
+  #education .card {
+    position: relative;
+  }
+
+  #education .card .btn {
+    position: absolute;
+    bottom: 5%;
+    font-size: 1rem;
+    width: 6rem;
+    line-height: .4rem;
+  }
+
+  /* --------------------------------------------------卡片 */
+
+  .education-contenthead {
+    color: #0076bb;
+    font-weight: 700;
+    padding: 0 calc(50% - 68px);
+  }
+
+  #education #education-contentpadding #h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+  }
+
+  #education .education-contenthead p {
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  /* -------------------------------------------教育推廣----------------- */
+
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper-container {
+    width: 100%;
+    /* height: 50%; */
+    /* margin-bottom: 8%; */
+  }
+
+  .swiper-container-link {
+    overflow: hidden;
+  }
+
+  .swiper-slide {
+    /* text-align: center; */
+    /* font-size: 18px; */
+    background: #fff;
+  }
+
+  /* -----.swiper-pagination置中 */
+  .swiper-pagination-center {
+    position: unset;
+    margin-bottom: 5%;
+
+  }
+
+  /* -----.swiper-pagination置中 */
+  .card-body {
+    padding: .5rem .5px .5px .5px;
+  }
+
+  /* ---------------------------------------swiper */
+
+  #container-containerfluid {
+    margin-bottom: 5%;
+  }
+
+  #Lcontainer {
+    /* background-color: red; */
+    /* height: 30px; */
+    width: 100%;
+  }
+
+  #Rcontainerfluid {
+    /* background-color: lightgreen; */
+    /* width: 100%; */
+    /* height: 30px; */
+    /* position: relative; */
+    /* right: calc(-0.1 * (100vw - 100%) / 2) */
+  }
+
+  #container-containerfluid p {
+    text-indent: 2.5em;
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  #container-containerfluid h3 {
+    color: #0076bb;
+    font-weight: 700;
+  }
+
+  #container-containerfluid #Lcontainer {
+    margin: 30px 0;
+  }
+
+  /* video-responsive------------ */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* video-responsive------------ */
+  /* -------container&containerfluid-conbination--------- */
+
+  .swiper-container {
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }
+
+  #lost {
+    text-align: center;
+  }
+
+  .pr-3,
+  #lost h3 {
+    color: #0076bb;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 20px 0;
+  }
+
+  #lost ul {
+    padding-left: 3%;
+  }
+
+  #lost ul li {
+    font-size: 1rem;
+    text-align: left;
+  }
+</style>
+
+<body>
+
+
+
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark justify-content-md-center justify-content-start fixed-top">
+      <div class="logo">
+
+        <a class="navbar-brand sticky" href="#"><img src="img/animal_shelter_logo.jpg" alt=""></a>
+
+      </div>
+      <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+        <ul class="navbar-nav mx-auto text-md-center text-left ">
+          <li class="nav-item col">
+            <!-- diff : col間距 -->
+            <a class="nav-link" href="#about_position">關於園區</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#">最新公告</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              業務專區
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item"
+                href="https://animalshelterfor4.github.io/adoption/Practice%20template02.html">領養</a>
+              <a class="dropdown-item" href="https://animalshelterfor4.github.io/public_service/public.html">為民服務</a>
+              <div class="dropdown-item"></div>
+              <a class="dropdown-item"
+                href="https://animalshelterfor4.github.io/animal_care/animalcare_page-html.html">動物照護</a>
+            </div>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#animal_protection">動保推廣</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#lost">協尋日誌</a>
+          </li>
+        </ul>
+        <form class="form-inline navbar-right ">
+          <div class="input-group input-group-sm">
+            <!-- diff : input-group-sm大小 -->
+            <input type="text" class="form-control " placeholder="請輸入關鍵字">
+            <div class="input-group-append ">
+              <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <a class="nav-link" href="">
+            <h6 style="color: rgba(255,255,255,.5);margin: 0;">English</h6>
+          </a>
+        </form>
+        <div class="icon ">
+          <ul class="contact_group_mb">
+            <li><a href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a></li>
+            <li><a href=""><i id="line" class="fab fa-line"></i></a></li>
+            <li><a href=""><i id="email" class="fas fa-envelope"></i></a></li>
+            <li><a href=""><i id="tel" class="fas fa-phone-alt"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="contact_group_com bg-light">
+    <a href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a>
+    <br>
+    <a href=""><i id="line" class="fab fa-line"></i></a>
+    <br>
+    <a href=""><i id="email" class="fas fa-envelope"></i></a>
+    <br>
+    <a href=""><i id="tel" class="fas fa-phone-alt"></i></a>
+
+  </div>
+  <!-- <div class="navbar-bgcolor">
+    <nav class="navbar navbar-expand-lg navbar-light mx-auto navnav px-lg-5 px-1">
+      <a class="navbar-brand " href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between " id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-around w-100 mx-auto max navul">
+          <li class="nav-item  active">
+            <a class="nav-link" href="#">關於園區 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">最新公告</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">業務專區</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              動保推廣
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">案例分享</a>
+          </li>
+
+        </ul>
+        <form class="form-inline col-auto my-2 my-lg-0">
+          <div class="nav-item">
+            <a class="nav-link" href="#">EN</a>
+          </div>
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div> -->
+  <!-- ----------------------------------------------------------------nav -->
+  <section class="banner">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div id="banner-swiper" class="carousel-inner ">
+        <div class="carousel-item active ">
+          <img src="img/banner800-1280.jpg" class=" w-100 " alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="news" href="https://www.animal.taichung.gov.tw/ct.asp?xItem=2037689&ctNode=1557&mp=119020">
+              <h5>杜絕狂犬病，你我動起來</h5>
+              <p>108年9月份動物狂犬病疫苗及晶片巡迴注射活動來囉!</p>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src='img/banner2-h760.jpg' class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="news" href="https://www.animal.taichung.gov.tw/ct.asp?xItem=2036415&ctNode=1557&mp=119020">
+              <h5>「108年度臺中市動物之家飼主犬隻行為訓練課程」</h5>
+              <p>末班車即日起開放報名！</p>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src='img/banner3-h760.jpg' class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="news" href="">
+              <h5>臺中市動物之家中秋節休園公告</h5>
+              <p>中秋節快樂～9/13~15 休園三天唷！</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------bootstrap carousel -->
+
+  <section id="education">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class=" card img-thumbnail">
+            <img src="img/adoption-1280-853.jpg" class="img-fluid" alt="">
+            <button type="button" class="btn btn-primary align-self-center">領養</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class=" card img-thumbnail">
+            <img src="img/animal_care.jpg" class="img-fluid" alt="">
+            <button type="button" class="btn btn-primary align-self-center">為民服務</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class=" card img-thumbnail">
+            <img src="img/animal_care_3.jpg" class="img-fluid" alt="">
+            <button type="button" class="btn btn-primary align-self-center">動物照護</button>
+          </div>
+        </div>
+      </div>
+      <div id="education-contentpadding" class="mt-4">
+        <h2 class="education-contenthead">教育推廣</h2>
+        <h5 id="h5" class="text-center">感謝您願意花時間了解關心「台灣動物緊急救援小組」的愛心愛心捐款細節；我們同樣也以感恩的心珍惜您的每一分捐款；所有愛心捐款將被妥善利用在 :</h5>
+        <p class="mt-5 text-center">傷病及受虐貓狗的救援、醫療、節育、安置、社會化、認領養等。</p>
+        <p class="text-center">傷病及受虐貓狗的營救器材購買及維護。</p>
+        <p class="text-center">資助全台超過100處弱勢私人流浪貓狗收容中心，資助其飼料與協助環境維護。</p>
+        <p class="text-center">推廣生命教育，透過各類媒體管道提倡尊重流浪犬貓相關動保觀念。</p>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------------------------------------education -->
+  <!-- Swiper -->
+  <div id="animal_protection" class="swiper-container-link">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="w-100 img-fluid" src="img/dog_friendly_store_2.png" alt="">
+          <div class="card-body">
+            <a class="card-link" href="">
+              <p class="card-title">友善店家</p>
+            </a>
+            <p class="card-text">我們歡迎任何有意幫助動物的朋友們來參與協會各個活動。</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="w-100 img-fluid" src="img/dog_friendly_store.jpg" alt="">
+          <div class="card-body">
+            <a href="">
+              <p class="card-title">志工招募</p>
+            </a>
+            <p class="card-text">鼓勵民間人士協助參與動物收容照護，強化人道教育及法令宣導。</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="w-100" src="img/dog_friendly_store_3-1280-852.jpg" alt="">
+          <div class="card-body">
+            <a href="">
+              <p class="card-title">教育宣導</p>
+            </a>
+            <p class="card-text">有養寵物的大家知道如何正確飼養毛小孩嗎?</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="w-100" src="img/volunteer.jpg" alt="">
+          <div class="card-body">
+            <a href="">
+              <p class="card-title">友善店家</p>
+            </a>
+            <p class="card-text">我們歡迎任何有意幫助動物的朋友們來參與協會各個活動。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+
+  </div>
+  <div id="pagination">
+    <div class="swiper-pagination swiper-pagination-center"></div>
+  </div>
+  <!-- ---------------------------------swiper effect------------------>
+
+  <section id="container-containerfluid" class="container">
+    <div class="row">
+      <div id="Lcontainer" class="col-lg-5 d-flex align-items-center">
+        <div class="d-flex justify-content-end">
+          <h3 class="pr-3">相關新聞</h3>
+          <div>
+            <p>
+              炎炎夏日，台灣各區氣溫居高不下，每日都有可能突破30°C，犬貓皮膚的汗腺非常不發達，因此主要是透過腳掌小汗腺及口腔呼吸來散熱，所以身體散熱的速度非常緩慢。狗的正常體溫約為37.5°C到39°C之間，比人類體溫稍微高一點。
+            </p>
+
+            <p>
+              由於身體不易散熱，因此狗更不能承受高溫。因高溫而熱衰竭會導致動物死亡，因此絕不容小覷。中暑的初期症狀為喘氣次數約40-50次/分、牙齦及舌頭極度漲紅、流口水量增加、喝水頻率增加、走路不穩、乾嘔，如此時沒有適時降溫，那嚴重將有可能致死。
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+      <div id="Rcontainerfluid" class="col">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ShbcAQWp6BU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- -------------container&containerfluid-conbination -->
+
+  <div id="lost" class="swiper-container container">
+    <h3>協尋日誌</h3>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="w-100 img-fluid" src="img/lost_pic4.jpg" alt="">
+          <div class="card-body">
+            <ul style="list-style: none;">
+              <li>名字：大摳</li>
+              <li>性別：女生</li>
+              <li>品種：哈士奇</li>
+              <li>顏色：灰白色</li>
+              <li>年齡：3歲</li>
+              <li>特徵：大型犬，身穿紅色背袋，剛剃毛，左眼黃色右眼藍綠色</li>
+              <li>走失時間：108/7/31晚上10點半左右</li>
+              <li>走失地點：台中市南屯區文心森林公園</li>
+              <li>聯絡人：楊小姐 0936-792532</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="w-100 img-fluid" src="img/lost_pic2.jpg" alt="">
+          <div class="card-body">
+            <ul style="list-style: none;">
+              <li>名字：Money</li>
+              <li>性別：男生</li>
+              <li>品種：黃金獵犬</li>
+              <li>顏色：米黃色</li>
+              <li>年齡：12歲</li>
+              <li>特徵：大型犬，長毛，舌頭有黑斑</li>
+              <li>走失時間：108/8/24晚上7點半左右</li>
+              <li>走失地點：台中市東區東英一街與東英路口</li>
+              <li>聯絡人：吳小姐 0927-162733</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="w-100 img-fluid" src="img/lost_pic3.jpg" alt="">
+          <div class="card-body">
+            <ul style="list-style: none;">
+              <li>名字：嚕嚕</li>
+              <li>性別：女生</li>
+              <li>品種：米克斯</li>
+              <li>顏色：黃色</li>
+              <li>年齡：7歲</li>
+              <li>特徵：中型犬，垂耳，四肢白毛，偏瘦</li>
+              <li>走失時間：108/8/10早上6點左右</li>
+              <li>走失地點：台中市大里區國光路二段</li>
+              <li>聯絡人：蔡先生 0973-392192</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="w-100 img-fluid" src="img/lost_pic1.jpg" alt="">
+          <div class="card-body ">
+            <ul style="list-style: none;">
+              <li>名字：阿財</li>
+              <li>性別：男生</li>
+              <li>品種：米克斯</li>
+              <li>顏色：黃色</li>
+              <li>年齡：5歲</li>
+              <li>特徵：大型犬，立耳，左後腿有疤，下巴偏黑，咖啡色項圈</li>
+              <li>走失時間：108/9/8早上11點左右</li>
+              <li>走失地點：台中市沙鹿區福田北街</li>
+              <li>聯絡人：許小姐 0911-245638</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="w-100 img-fluid" src="img/dog_friendly_store_2.png" alt="">
+          <div class="card-body">
+            <ul style="list-style: none;">
+              <li>名字：阿財</li>
+              <li>性別：男生</li>
+              <li>品種：米克斯</li>
+              <li>顏色：黃色</li>
+              <li>年齡：5歲</li>
+              <li>特徵：大型犬，立耳，左後腿有疤，下巴偏黑，咖啡色項圈</li>
+              <li>走失時間：108/9/8早上11點左右</li>
+              <li>走失地點：台中市沙鹿區福田北街</li>
+              <li>聯絡人：許小姐 0911-245638</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <div> -->
+  <div class="swiper-pagination swiper-pagination-center"></div>
+  <!-- </div> -->
+  <!-- ---------------------lost swiper -->
+
+  <section id="about_position" class="information">
+    <div id="mask">
+      <div class="container pd">
+        <h3>Google 地圖</h3>
+        <div class="row">
+          <div id="info_pic_A" class="col-lg-7 col-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6849898461264!2d120.57307631497397!3d24.14769847939957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e54c06897bd%3A0x5a12331be91055df!2z5Y-w5Lit5biC5YuV54mp5LmL5a62!5e0!3m2!1szh-TW!2stw!4v1569308353484!5m2!1szh-TW!2stw"
+              width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div id="info_text" class="col-lg-5 col-12">
+            <p>
+              地址：台中市南屯區中台路601號<br>
+              電話：04-23850949<br>
+              園區開放參觀時間：<br>
+              每週一、二、四、六，<br>
+              上午10時至12時，下午1時30分至4時，<br>
+              星期三、五、日休園消毒。<br>
+              犬貓領回作業時間：每日上午10時至12時，下午1時30分至4時。
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- ---------------------footer-------------- -->
+  <footer class="page-footer font-small bg-secondary ">
+    <!-- diff : 資料來源網址 -->
+    <!-- Footer -->
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left ">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto ">
+          <!-- Links -->
+          <h5 class="font-weight-bold">關於園區</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#about_position">交通位置</a></li>
+            <!-- <li><a class="text-white" href="#">入園需知</a></li> -->
+          </ul>
+        </div>
+
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold">最新公告</h5>
+          <!-- <ul class="list-unstyled text-small">
+                        <li><a class="text-white" href="#">台中市動保處</a></li>
+                        <li><a class="text-white" href="#">組織架構</a></li>
+                        <li><a class="text-white" href="#">行政防疫</a></li>
+                      </ul> -->
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold">業務專區</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white"
+                href="https://animalshelterfor4.github.io/adoption/Practice%20template02.html">領養</a></li>
+            <li><a class="text-white" href="https://animalshelterfor4.github.io/public_service/public.html">為民服務</a>
+            </li>
+            <li><a class="text-white"
+                href="https://animalshelterfor4.github.io/animal_care/animalcare_page-html.html">動物照護</a></li>
+          </ul>
+        </div>
+
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold">動保推廣</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-white" href="#animal_protection">友善店家</a></li>
+            <li><a class="text-white" href="#animal_protection">志工招募</a></li>
+            <li><a class="text-white" href="#animal_protection">教育推廣</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mx-auto ">
+          <h5 class="font-weight-bold">協尋日誌</h5>
+          <ul class="list-unstyled text-small">
+          </ul>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </footer>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <footer class="page-footer font-small indigobg-light ">
+    <div class="footer-copyright text-center py-3 ">
+      Copyright © 2019 台中市動物之家 版權所有<br>
+      此網站僅供學術研究使用
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+
+
+
+
+
+
+
+
+  <!-- ---------------------------------------bootstrap--------- -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!--------------swiper js----------------------------- -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container-link', {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+
+      }
+    });
+  </script>
+
+  <!-- -----------------swiper js loop---- -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+
+      }
+    });
+  </script>
+</body>
+
+</html>
