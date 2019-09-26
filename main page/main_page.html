@@ -12,8 +12,8 @@
   <!-- ---------------------------------swiper---------------- -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
   <!-- -------------------------------fontawesome--------------->
-  <link rel="stylesheet" href="position-css.css">
-  <!-- --------------------------------map css-------->
+  <link rel="stylesheet" href="/google map.css">
+  <!-- --------------------------------google map css-------->
 
 
 </head>
@@ -34,17 +34,17 @@
       z-index: 100;
     }
 
-    #about_position iframe {
+    /* #about_position iframe {
       width: 80%;
       height: 45vh;
-    }
+    } */
     #about_position #info_pic_A{
       padding: 30px 50px;
     }
 
-    #about_position #info_text{
+    /* #about_position #info_text{
       padding: 30px 50px;
-    }
+    } */
 
 
 
@@ -140,6 +140,8 @@
   .row {
     padding-top: 70px;
     padding-bottom: 90px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .list-unstyled {
@@ -797,31 +799,31 @@
 
   <section id="about_position" class="information">
     <div id="mask">
-      <div class="container pd">
-        <h3>Google 地圖</h3>
-        <div class="row">
-          <div id="info_pic_A" class="col-lg-7 col-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6849898461264!2d120.57307631497397!3d24.14769847939957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e54c06897bd%3A0x5a12331be91055df!2z5Y-w5Lit5biC5YuV54mp5LmL5a62!5e0!3m2!1szh-TW!2stw!4v1569308353484!5m2!1szh-TW!2stw"
-              width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          </div>
-          <div id="info_text" class="col-lg-5 col-12">
-            <p>
-              地址：台中市南屯區中台路601號<br>
-              電話：04-23850949<br>
-              園區開放參觀時間：<br>
-              每週一、二、四、六，<br>
-              上午10時至12時，下午1時30分至4時，<br>
-              星期三、五、日休園消毒。<br>
-              犬貓領回作業時間：每日上午10時至12時，下午1時30分至4時。
-
-            </p>
-          </div>
+        <div class="container pd">
+            <div class="row">
+                <div id="info_text" class="col-lg-5 col-12">
+                    <h3>Google 地圖</h3>
+                    <p>
+                        地址：台中市南屯區中台路601號<br>
+                        電話：04-23850949<br>
+                        園區開放參觀時間：<br>
+                        每週一、二、四、六，<br>
+                        上午10時至12時，下午1時30分至4時，<br>
+                        星期三、五、日休園消毒。<br>
+                        犬貓領回作業時間：每日上午10時至12時，下午1時30分至4時。  
+                    </p>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <div class="googlemap-rwd ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6849898461264!2d120.57307631497397!3d24.14769847939957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e54c06897bd%3A0x5a12331be91055df!2z5Y-w5Lit5biC5YuV54mp5LmL5a62!5e0!3m2!1szh-TW!2stw!4v1569308353484!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+                  </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-  </section>
+</section>
+<!-- -------------------------google map -->
 
 
 
