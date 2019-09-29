@@ -5,25 +5,15 @@ body{
     max-width: 1140px;
     margin: 0 auto;
 }
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 20;
-}
-.logo img{
-    object-fit: cover;
-    width: 220px;
-    height: 54.3px;
-    border-radius: 10px;
-}
-.navbar-brand{
-    padding: 0;
+
+header .dropdown-toggle {
+    white-space: nowrap;
 }
 .animal_care_banner{
     width: 100%;
     height: 680px;
     position: relative;
-    padding-top: 70.3px;
+    padding-top: 76px;
 }
 .animal_care_banner img{
     width: 100%;
@@ -121,11 +111,30 @@ h4{
     color: rgb(77, 75, 75);
 }
 
-
-@media(max-width:890px){
-
+@media(max-width:991px){
+    #hospital{
+        font-size: 0.75rem;
+    }
+    h3{
+        margin: 0;
+        font-size: 2rem;
+    }
+    h4{
+        margin: 0;
+        font-size: 1.6rem;
+    }
 }
 
-@media(max-width:600px){
-
+@media(max-width:750px){
+    #hospital{
+        font-size: 0.7rem;
+    }
+    #hotspial .table td, .table th {
+        padding: 0.5rem;
+    }
+}
+@media(max-width:670px){
+    #hospital{
+        font-size: 0.55rem;
+    }
 }

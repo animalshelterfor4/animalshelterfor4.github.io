@@ -2,7 +2,8 @@ body{
     margin: 0;
 }
 .container{
-    max-width: 1140;
+    max-width: 1140px;
+    width:80%;
     margin: 0 auto;
 }
 #about_position{
@@ -16,6 +17,9 @@ body{
 #about_position #mask{
     background-color: rgba(116, 115, 115, 0.61);
 
+}
+#about_position p{
+    line-height:1.5rem;
 }
 #about_position .pd{
     padding: 6% 0;

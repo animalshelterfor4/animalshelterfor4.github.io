@@ -4,59 +4,185 @@ body{
 }
 .container {
     max-width:1140px;
+    width: 80%;
     margin:0 auto; 
    
 }
 
-.logo img{
-  object-fit: cover;
-  width: 220px;
-  height: 54.3px;
-  border-radius: 10px;
-}
+        /* navbar*/
+        header{
+          width: 100vw;
+        }
+        header .navbar-brand {
+          display: inline-block;
+          padding: 0;
+          margin-left: 1rem;
+      }
 
-.navbar-toggler {
-  position: absolute;
-  right: 20px;
-  top: 20px
-}
+      header .logo img {
+          object-fit: cover;
+          width: 60px;
+          height: 60px;
+          border-radius: 30px;
+      }
 
-.banner {
-  padding-top: 55px;
-}
+      header .logo_text {
+          display: none;
+      }
 
-.dropdown-toggle::after {
-  display: none;
-  margin-left: .255em;
-  vertical-align: .255em;
-  content: "";
-}
+      header #logo_title {
+          color: rgba(255, 255, 255, .6);
+          margin: 0;
+          font-family: 'Noto Serif TC', serif;
+      }
 
-.input-group {
-  width: 70%;
-}
+      header .navbar-toggler {
+          position: absolute;
+          right: 20px;
+          top: 20px
+      }
 
-nav .nav-link h6{ 
-  font-size: 16px;
-}
+      header .dropdown-toggle {
+          white-space: nowrap;
+      }
 
-section .img-fluid { 
+      header .input-group {
+          width: 70%;
+      }
+
+      header .nav-link {
+          display: block;
+          padding: .5rem 10px;
+      }
+
+      header nav .nav-link h6 {
+          font-size: 16px;
+      }
+
+      header .form-inline {
+          margin-left: 15px;
+      }
+
+      header .input-group>.custom-select:not(:last-child),
+      .input-group>.form-control:not(:last-child) {
+          padding: .25rem .2rem;
+      }
+
+
+
+
+      /* <!-- diff : icon --> */
+      header .contact_group_mb {
+          display: none;
+      }
+
+      .contact_group_com {
+          padding-top: 10px 0;
+          background-color: white;
+          border-radius: 5px;
+          position: absolute;
+          z-index: 5;
+          top: calc(50vh - 75px);
+
+      }
+
+      .contact_group_com a {
+          font-size: 1.5rem;
+          color: #343a40;
+          margin: 0 5px;
+      }
+
+      .contact_group_com #fb,
+      #line {
+          font-size: 1.7rem;
+          padding-top: 7px;
+      }
+
+
+
+      @media(max-width:991px) {
+          header .logo_text {
+              display: block;
+
+          }
+
+          .contact_group_com {
+              display: none;
+          }
+
+          header .contact_group_mb {
+              display: flex;
+              list-style-type: none;
+              padding: 0;
+          }
+
+          header .contact_group_mb a {
+              font-size: 1.7rem;
+              color: white;
+              margin: 0 15px;
+
+          }
+
+          header .contact_group_mb #fb,
+          #line {
+              font-size: 2rem;
+              padding-top: 7px;
+          }
+
+          header .contact_group_mb #email {
+              font-size: 1.8rem;
+              padding-top: 9px;
+          }
+
+          header .contact_group_mb #tel {
+              padding-top: 9px;
+          }
+
+      }
+          /* navbar */
+
+
+
+/* banner */
+
+/* section .img-fluid { 
   padding-top: 505px;
   
 }
-
-.badge {
-    margin-bottom: 50px;
-    font-size: 48px;
-    font-family: 'Noto Sans TC';
-}
-
-.img-fluid-01 {
+.banner .img-fluid-01 {
   width: 100%;
-  
-  
+  object-fit: cover;
+} */
+.banner{
+  position: relative;
+}
+img{
+  width: 100%;
+  height: 100vh;
   object-fit: cover;
 }
+.banner .adoption_title{
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+}
+.banner .badge {
+  font-size: 48px;
+  font-family: 'Noto Sans TC';
+}
+/* banner */
+
+
+/* 流程圖 */
+
+#about #process_pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 流程圖 */
+
+  
 
 .pink-text h1{
   margin-top: 80px;
@@ -75,94 +201,111 @@ section .card {
   margin-top: 20px;
 }
 
-footer .list-unstyle ul>li>a{
-  flood-color: aliceblue;
+/* 留言 */
+#message{
+  padding: 20px 0 40px 0;
+}
+/* 留言 */
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer.container{
+  max-width: 1140px;
+  width: 80%;
+  margin: 0 auto;
+}
+footer{
+  background-color: #343a40;
+  padding: 20px 0;
+}
+footer .footer_nav{
+  display: flex;
+  justify-content: left;
+  padding: 20px 15px 0 15px;
+}
+footer .footer_navlist{
+  margin: 5px 0;
+}
+footer #footer_navlist{
+  font-weight: 400;
 }
 
-.badge-2 {
-  margin-bottom: 20px;
+footer .footer_nav .footer_groups{
+  display: flex;
 }
-
-.row {
-  padding-top:70px ;
-  padding-bottom:90px ;
+footer .footer_nav ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.bg-secondary {
-  background-color: #343a40!important;
+footer .footer_nav a{
+  margin-right: 15px;
+  text-decoration: none;
 }
-.text-white{
-  color:rgba(255,255,255,0.6)!important;
+footer .footer_nav a:hover{
+  color: rgba(255, 255, 255, 0.733) !important;
+  position: relative;
+  top:2px;
+  left: 1px;
 }
-.font-weight-bold {
-  color: black;
+footer .footer_nav #major_buz{
+  padding:25px 0;
+  margin: 0;
+  display: block;
 }
-
-.list-unstyled {
-  margin-top:25px ;
-  
+.font_light{
+  color: rgba(255,255,255,.5) !important;
 }
-
-/* <!-- diff : icon --> */
-.contact_group_mb{
-  display: none;
+.font_dark{
+  color: black !important;
+  font-weight: 800;
 }
-
-.contact_group_com{
-  padding-top: 10px 0;
+footer .footer_info{
+  margin-left: 100px;
+}
+footer .footer_info .address{
+  margin-bottom: 14px;
+}
+#copy_announce{
   background-color: white;
-  border-radius: 5px;
-  position: absolute;
-  z-index: 5;
-  top: calc(50vh - 75px);
-  
+  text-align: center;
 }
-.contact_group_com a{
-  font-size: 1.5rem;
-  color: rgb(53, 78, 190);
-  margin: 0 5px;
-}
-
-.contact_group_com #fb,#line{
-  font-size: 1.7rem;
-  padding-top: 7px;
-}
-
-
 
 @media(max-width:991px){
+  footer .footer_nav {
+      display: inline-flex;
+      flex-direction: column-reverse;
+      padding-left: calc(45% - 165px);
   
-  .contact_group_com{
-      display: none;
   }
-  .contact_group_mb{
-      display: flex;
-
-      list-style-type:none;
-      padding: 0;
-  }
-  
-  .contact_group_mb a{
-      font-size: 1.7rem;
-      color: rgb(53, 78, 190);
-      margin: 0 15px;
+  footer .footer_info{
+      margin-left: 0;
+      margin:0 0 35px  0;
       
   }
-  .contact_group_mb #fb,#line{
-      font-size: 2rem;
-      padding-top: 7px;
+}
+@media(max-width:600px){
+  footer .footer_nav {
+      padding-left: calc(50% - 100px);
   }
-  
-  
-
+  footer .footer_nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  footer .footer_nav #footer_navtitle{
+      padding: 10px 0;
+  }
 }
 
-
-
-/* @media (min-width: 768px) {
-  .navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-    
-  }
-} */ */
+/* footer */
