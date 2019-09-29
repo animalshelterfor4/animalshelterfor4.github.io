@@ -8,9 +8,13 @@
     <title>台中市動物之家-為民服務</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <!-- bootstrap cdn -->
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="enter.css">
+    <!-- -------------------------------enter anime -->
     <link rel="Shortcut Icon" type="image/x-icon" href="logo/logo-03.ico" />
     <!-- --------------瀏覽器頁簽 logo----------- -->
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet"><!-- diff :字體 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
@@ -28,349 +32,394 @@
 
 </head>
 
-<body>
-    <header>
-        <nav
-            class="navbar navbar-dark navbar-expand-lg bg-dark justify-content-md-start justify-content-start fixed-top">
-            <div class="logo">
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader">
+        <h1 class="ml8">
+            <span class="letters-container">
 
-                <a class="navbar-brand sticky"
-                    href=" https://animalshelterfor4.github.io/main%20page/main_page.html"><img src="logo/logo-03.jpg"
-                        alt=""></a>
+                <!-- <span class="letters letters-left">Hi</span>
+              <span class="letters bang">!</span> -->
+                <!-- 上方span表也可製作文字動畫 -->
 
-            </div>
-            <div class="logo_text">
-                <h2 id="logo_title">台中市動物之家</h2>
-            </div>
-            <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse collapse justify-content-between align-items-center w-100"
-                id="collapsingNavbar2">
-                <ul class="navbar-nav mx-auto text-md-left text-left ">
-                    <li class="nav-item col">
-                        <!-- diff : col間距 -->
-                        <a class="nav-link" href="https://animalshelterfor4.github.io/main%20page/main_page.html#about_position">園區位置</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link" href="https://animalshelterfor4.github.io/main%20page/main_page.html">最新公告</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            業務專區
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item"
-                                href="https://animalshelterfor4.github.io/adoption/adoption.html">領養</a>
-                            <a class="dropdown-item"
-                                href="https://animalshelterfor4.github.io/public_service/public.html">為民服務</a>
-                            <div class="dropdown-item"></div>
-                            <a class="dropdown-item"
-                                href="https://animalshelterfor4.github.io/animal_care/animalcare_page-html.html">動物照護</a>
-                        </div>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link" href="https://animalshelterfor4.github.io/main%20page/main_page.html#education-contentpadding">動保推廣</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link" href="https://animalshelterfor4.github.io/main%20page/main_page.html#lost">協尋日誌</a>
-                    </li>
-                </ul>
-                <form class="form-inline navbar-right ">
-                    <div class="input-group input-group-sm">
-                        <!-- diff : input-group-sm大小 -->
-                        <input type="text" class="form-control " placeholder=" 請輸入關鍵字">
-                        <div class="input-group-append ">
-                            <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
-                        </div>
-                    </div>
-                    <a class="nav-link" href="">
-                        <h6 style="color: rgba(255,255,255,.5);margin: 0;">English</h6>
-                    </a>
-                </form>
-                <div class="icon ">
-                    <ul class="contact_group_mb">
-                        <li><a href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a></li>
-                        <li><a href=""><i id="line" class="fab fa-line"></i></a></li>
-                        <li><a href=""><i id="email" class="fas fa-envelope"></i></a></li>
-                        <li><a href=""><i id="tel" class="fas fa-phone-alt"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- contact group -->
-    <div class="contact_group_com bg-light">
-        <a target="blank" href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a>
-        <br>
-        <a target="blank" href=""><i id="line" class="fab fa-line"></i></a>
-        <br>
-        <a target="blank" href=""><i id="email" class="fas fa-envelope"></i></a>
-        <br>
-        <a target="blank" href=""><i id="tel" class="fas fa-phone-alt"></i></a>
-
+            </span>
+            <span class="circle circle-white"></span>
+            <span class="circle circle-dark"></span>
+            <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+        </h1>
     </div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!-- <h2>Tada!</h2>
+          <p>Some text in my newly loaded page..</p> -->
 
-    <section class="banner">
-        <img src="img/public_banner.jpg" alt="">
-            <div class="adoption_title badge badge-warning">為民服務</div>
-    </section>
 
-    <section id="tabs" class="project-tab">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav>
-                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-faq"
-                                role="tab" aria-controls="nav-faq" aria-selected="true">常見問答(FAQ)</a>
-                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-law"
-                                role="tab" aria-controls="nav-law" aria-selected="false">法規資訊(LAW)</a>
-                        </div>
-                    </nav>
+        <!-- ---------首頁載入動畫html---------- -->
+        <header>
+            <nav
+                class="navbar navbar-dark navbar-expand-lg bg-dark justify-content-md-start justify-content-start fixed-top">
+                <div class="logo">
 
-                    <div class="tab-content" id="nav-tabContent">
-                        <!-- 常見問答(FAQ) -->
-                        <div class="tab-pane fade show active" id="nav-faq" role="tabpanel"
-                            aria-labelledby="nav-faq-tab">
-                            <table class="table" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th>No.</th>
-                                        <th>問題內容</th>
-                                        <th>回覆單位</th>
-                                        <th>最後異動日期</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><a href="#">1</a></td>
-                                        <td>家中寵物屍體該如何處理?</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2018-03-09</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">2</a></td>
-                                        <td>如何辦理動物用藥品販賣業許可證？</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2012-07-16</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">3</a></td>
-                                        <td>哪些人需要申請動物用藥品販賣業許可證？</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2012-07-16</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">4</a></td>
-                                        <td>家中用不完的動物用藥品，可在網路上販賣給其他人嗎？</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2012-07-16</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">5</a></td>
-                                        <td>民眾可以到何處購買犬心寶預防藥、蚤不到滴劑？</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2014-05-22</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">6</a></td>
-                                        <td>流浪犬如何通報捕捉呢？</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2016-03-29</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <a class="navbar-brand sticky"
+                        href=" https://animalshelterfor4.github.io/main%20page/main_page.html"><img
+                            src="logo/logo-03.jpg" alt=""></a>
 
-                            <!-- FAQ Paging_navitation -->
-                            <div aria-label="Page navigation">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
+                </div>
+                <div class="logo_text">
+                    <h2 id="logo_title">台中市動物之家</h2>
+                </div>
+                <button class="navbar-toggler ml-3" type="button" data-toggle="collapse"
+                    data-target="#collapsingNavbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse justify-content-between align-items-center w-100"
+                    id="collapsingNavbar2">
+                    <ul class="navbar-nav mx-auto text-md-left text-left ">
+                        <li class="nav-item col">
+                            <!-- diff : col間距 -->
+                            <a class="nav-link"
+                                href="https://animalshelterfor4.github.io/main%20page/main_page.html#about_position">園區位置</a>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link"
+                                href="https://animalshelterfor4.github.io/main%20page/main_page.html">最新公告</a>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                業務專區
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item"
+                                    href="https://animalshelterfor4.github.io/adoption/adoption.html">領養</a>
+                                <a class="dropdown-item"
+                                    href="https://animalshelterfor4.github.io/public_service/public.html">為民服務</a>
+                                <div class="dropdown-item"></div>
+                                <a class="dropdown-item"
+                                    href="https://animalshelterfor4.github.io/animal_care/animalcare_page-html.html">動物照護</a>
                             </div>
-
-                        </div>
-                        <!-- 常見問答(FAQ) End-->
-
-                        <!-- 法規資訊(LAW) -->
-                        <div class="tab-pane fade" id="nav-law" role="tabpanel" aria-labelledby="nav-law-tab">
-                            <table class="table" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th>No.</th>
-                                        <th>問題內容</th>
-                                        <th>回覆單位</th>
-                                        <th>最後異動日期</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><a href="#">1</a></td>
-                                        <td>行政院動物防疫畜牧相關法令</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2019-03-15</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">2</a></td>
-                                        <td>臺中市寵物生命紀念業管理辦法</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2019-03-15</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">3</a></td>
-                                        <td>臺中市寵物屍體處理及寵物生命紀念業管理自治條例</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2017-12-15</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">4</a></td>
-                                        <td>臺中市獸醫診療機構設置標準</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2017-12-11</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">5</a></td>
-                                        <td>臺中市誘捕籠借用管理辦法</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2017-10-14</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">6</a></td>
-                                        <td>臺中市犬貓收容及處理收費標準</td>
-                                        <td>臺中市動物保護防疫處</td>
-                                        <td>2017-10-03</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <!-- LAE Paging_navitation -->
-                            <div aria-label="Page navigation">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link"
+                                href="https://animalshelterfor4.github.io/main%20page/main_page.html#education-contentpadding">動保推廣</a>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link"
+                                href="https://animalshelterfor4.github.io/main%20page/main_page.html#lost">協尋日誌</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline navbar-right ">
+                        <div class="input-group input-group-sm">
+                            <!-- diff : input-group-sm大小 -->
+                            <input type="text" class="form-control " placeholder=" 請輸入關鍵字">
+                            <div class="input-group-append ">
+                                <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
                             </div>
-
                         </div>
-                        <!-- 法規資訊(LAW) End -->
-
+                        <a class="nav-link" href="">
+                            <h6 style="color: rgba(255,255,255,.5);margin: 0;">English</h6>
+                        </a>
+                    </form>
+                    <div class="icon ">
+                        <ul class="contact_group_mb">
+                            <li><a href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i id="line" class="fab fa-line"></i></a></li>
+                            <li><a href=""><i id="email" class="fas fa-envelope"></i></a></li>
+                            <li><a href=""><i id="tel" class="fas fa-phone-alt"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
+        </header>
+        <!-- contact group -->
+        <div class="contact_group_com bg-light">
+            <a target="blank" href="https://pse.is/KPAJU"><i id="fb" class="fab fa-facebook-square"></i></a>
+            <br>
+            <a target="blank" href=""><i id="line" class="fab fa-line"></i></a>
+            <br>
+            <a target="blank" href=""><i id="email" class="fas fa-envelope"></i></a>
+            <br>
+            <a target="blank" href=""><i id="tel" class="fas fa-phone-alt"></i></a>
+
         </div>
-    </section>
 
-    <section id="Happiness_Car">
-        <div class="container">
-            <div class="page-header">
-                <h1 class="text-center">台中市動物之家 - GO幸福送養專車送愛到家服務</h1>
-            </div>
+        <section class="banner">
+            <img src="img/public_banner.jpg" alt="">
+            <div class="adoption_title badge badge-warning">為民服務</div>
+        </section>
 
-            <!-- Grid divide to 2 blocks -->
-            <div class="row grid-divider">
+        <section id="tabs" class="project-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-faq"
+                                    role="tab" aria-controls="nav-faq" aria-selected="true">常見問答(FAQ)</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-law"
+                                    role="tab" aria-controls="nav-law" aria-selected="false">法規資訊(LAW)</a>
+                            </div>
+                        </nav>
 
-                <!-- Gird-Left -->
-                <div class="col-lg-5">
-                    <div class="col-padding">
-                        <img class="card-img" src="http://uip.taichung.gov.tw/public/data/119020/871315411871.jpg"
-                            alt="Card image">
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- 常見問答(FAQ) -->
+                            <div class="tab-pane fade show active" id="nav-faq" role="tabpanel"
+                                aria-labelledby="nav-faq-tab">
+                                <table class="table" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>問題內容</th>
+                                            <th>回覆單位</th>
+                                            <th>最後異動日期</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#">1</a></td>
+                                            <td>家中寵物屍體該如何處理?</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2018-03-09</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">2</a></td>
+                                            <td>如何辦理動物用藥品販賣業許可證？</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2012-07-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">3</a></td>
+                                            <td>哪些人需要申請動物用藥品販賣業許可證？</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2012-07-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">4</a></td>
+                                            <td>家中用不完的動物用藥品，可在網路上販賣給其他人嗎？</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2012-07-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">5</a></td>
+                                            <td>民眾可以到何處購買犬心寶預防藥、蚤不到滴劑？</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2014-05-22</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">6</a></td>
+                                            <td>流浪犬如何通報捕捉呢？</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2016-03-29</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- FAQ Paging_navitation -->
+                                <div aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1"
+                                                aria-disabled="true">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- 常見問答(FAQ) End-->
+
+                            <!-- 法規資訊(LAW) -->
+                            <div class="tab-pane fade" id="nav-law" role="tabpanel" aria-labelledby="nav-law-tab">
+                                <table class="table" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>問題內容</th>
+                                            <th>回覆單位</th>
+                                            <th>最後異動日期</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#">1</a></td>
+                                            <td>行政院動物防疫畜牧相關法令</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2019-03-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">2</a></td>
+                                            <td>臺中市寵物生命紀念業管理辦法</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2019-03-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">3</a></td>
+                                            <td>臺中市寵物屍體處理及寵物生命紀念業管理自治條例</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2017-12-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">4</a></td>
+                                            <td>臺中市獸醫診療機構設置標準</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2017-12-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">5</a></td>
+                                            <td>臺中市誘捕籠借用管理辦法</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2017-10-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">6</a></td>
+                                            <td>臺中市犬貓收容及處理收費標準</td>
+                                            <td>臺中市動物保護防疫處</td>
+                                            <td>2017-10-03</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- LAE Paging_navitation -->
+                                <div aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1"
+                                                aria-disabled="true">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- 法規資訊(LAW) End -->
+
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Grid-Right -->
-                <div class="col-lg-7">
-                    <div class="col-padding">
-                        <ol type="1">
-                            <li>認養地點：臺中市動物之家
-                                <ul>
-                                    <li>南屯園區：臺中市南屯區中台路601號</li>
-                                    <li>后里園區：臺中市后里區堤防路370號</li>
-                                </ul>
-                            </li><br>
-                            <li>申請方式：
-                                <ul>
-                                    <li>至本市動物之家南屯及后里園區認養流浪犬貓，並已辦妥認養程序；如無適當載運車輛或寵具運送時，得填寫申請單向本處申請載運服務(以協助中大型犬隻優先)。</li>
-                                </ul>
-                            </li><br>
-                            <li>載運地點：
-                                <ul>
-                                    <li>以臺中市所轄行政區域內為主</li>
-                                    <li>如欲送達鄰近縣市(投/苗/彰)請洽詢園區送愛到家服務專案人員，申請相關服務前，需至園區辦妥認養程序。</li>
-                                </ul>
-                            </li><br>
-                            <li>送達日期及時間：
-                                <ul>
-                                    <li>由本處另行安排於每週一至五載運，並於載運前一日電話通知申請人。</li>
-                                    <li>如爽約三次(含以上)者，本處得拒絕該員之申請。</li>
+        <section id="Happiness_Car">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="text-center">台中市動物之家 - GO幸福送養專車送愛到家服務</h1>
+                </div>
+
+                <!-- Grid divide to 2 blocks -->
+                <div class="row grid-divider">
+
+                    <!-- Gird-Left -->
+                    <div class="col-lg-5">
+                        <div class="col-padding">
+                            <img class="card-img" src="http://uip.taichung.gov.tw/public/data/119020/871315411871.jpg"
+                                alt="Card image">
+                        </div>
+                    </div>
+
+                    <!-- Grid-Right -->
+                    <div class="col-lg-7">
+                        <div class="col-padding">
+                            <ol type="1">
+                                <li>認養地點：臺中市動物之家
+                                    <ul>
+                                        <li>南屯園區：臺中市南屯區中台路601號</li>
+                                        <li>后里園區：臺中市后里區堤防路370號</li>
+                                    </ul>
+                                </li><br>
+                                <li>申請方式：
+                                    <ul>
+                                        <li>至本市動物之家南屯及后里園區認養流浪犬貓，並已辦妥認養程序；如無適當載運車輛或寵具運送時，得填寫申請單向本處申請載運服務(以協助中大型犬隻優先)。
+                                        </li>
+                                    </ul>
+                                </li><br>
+                                <li>載運地點：
+                                    <ul>
+                                        <li>以臺中市所轄行政區域內為主</li>
+                                        <li>如欲送達鄰近縣市(投/苗/彰)請洽詢園區送愛到家服務專案人員，申請相關服務前，需至園區辦妥認養程序。</li>
+                                    </ul>
+                                </li><br>
+                                <li>送達日期及時間：
+                                    <ul>
+                                        <li>由本處另行安排於每週一至五載運，並於載運前一日電話通知申請人。</li>
+                                        <li>如爽約三次(含以上)者，本處得拒絕該員之申請。</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer_nav">
+                    <div class="site_map">
+                        <ul class="footer_navgroups">
+                            <li id="footer_navtitle" class="footer_navbar"><a class="font_dark"
+                                    href="https://animalshelterfor4.github.io/main%20page/main_page.html#about_position">園區位置</a>
+                            </li>
+                            <li id="footer_navtitle" class="footer_navbar"><a class="font_dark"
+                                    href="https://animalshelterfor4.github.io/main%20page/main_page.html">最新公告</a></li>
+                            <li id="footer_navtitle" class="footer_navbar font_dark">業務專區
+                                <ul id="major_buz">
+                                    <li class="footer_navlist"><a id="footer_navlist" class="font_light"
+                                            href="https://animalshelterfor4.github.io/adoption/adoption.html">領養</a>
+                                    </li>
+                                    <li class="footer_navlist"><a id="footer_navlist" class="font_light"
+                                            href=" https://animalshelterfor4.github.io/public_service/public.html">為民服務</a>
+                                    </li>
+                                    <li class="footer_navlist"><a id="footer_navlist" class="font_light"
+                                            href=" https://animalshelterfor4.github.io/animal_care/animalcare_page-html.html">動物照護</a>
+                                    </li>
                                 </ul>
                             </li>
-                        </ol>
+                            <li id="footer_navtitle" class="footer_navbar"><a class="font_dark"
+                                    href="https://animalshelterfor4.github.io/main%20page/main_page.html#education-contentpadding">動保推廣</a>
+                            </li>
+                            <li id="footer_navtitle" class="footer_navbar"><a class="font_dark"
+                                    href="https://animalshelterfor4.github.io/main%20page/main_page.html#lost">協尋日誌</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer_nav">
-                <div class="site_map">
-                    <ul class="footer_navgroups">
-                        <li id="footer_navtitle" class="footer_navbar"><a class="font_dark" href="https://animalshelterfor4.github.io/main%20page/main_page.html#about_position">園區位置</a></li>
-                        <li id="footer_navtitle" class="footer_navbar"><a class="font_dark" href="https://animalshelterfor4.github.io/main%20page/main_page.html">最新公告</a></li>
-                        <li id="footer_navtitle" class="footer_navbar font_dark">業務專區
-                            <ul id="major_buz">
-                                <li class="footer_navlist"><a id="footer_navlist" class="font_light" href="https://animalshelterfor4.github.io/adoption/adoption.html">領養</a></li>
-                                <li class="footer_navlist"><a id="footer_navlist" class="font_light" href=" https://animalshelterfor4.github.io/public_service/public.html">為民服務</a></li>
-                                <li class="footer_navlist"><a id="footer_navlist" class="font_light" href=" https://animalshelterfor4.github.io/animal_care/animalcare_page-html.html">動物照護</a></li>
-                            </ul>
-                        </li>
-                        <li id="footer_navtitle" class="footer_navbar"><a class="font_dark" href="https://animalshelterfor4.github.io/main%20page/main_page.html#education-contentpadding">動保推廣</a></li>
-                        <li id="footer_navtitle" class="footer_navbar"><a class="font_dark" href="https://animalshelterfor4.github.io/main%20page/main_page.html#lost">協尋日誌</a></li>
-                    </ul>
-                </div>
-                <div class="footer_info font_dark">
-                    <div class="address">
-                        聯絡電話：04-23850976<br>
-                        臺中市南屯區中台路601號
-                    </div>
-                    <div class="outlink">
-                        外部連結<br>
-                        <a class="font_light" href="https://www.animal.taichung.gov.tw/">
-                            台中市動物保護防疫處
-                        </a><br>
-                        <a class="font_light" href="https://pse.is/LM6NF">更多浪浪的故事</a>
+                    <div class="footer_info font_dark">
+                        <div class="address">
+                            聯絡電話：04-23850976<br>
+                            臺中市南屯區中台路601號
+                        </div>
+                        <div class="outlink">
+                            外部連結<br>
+                            <a class="font_light" href="https://www.animal.taichung.gov.tw/">
+                                台中市動物保護防疫處
+                            </a><br>
+                            <a class="font_light" href="https://pse.is/LM6NF">更多浪浪的故事</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </footer>
+        <div id="copy_announce">
+            Copyright © 2019 台中市動物之家 版權所有<br>
+            此網站僅供學術研究使用
         </div>
-    </footer>
-    <div id="copy_announce">
-        Copyright © 2019 台中市動物之家 版權所有<br>
-        此網站僅供學術研究使用
-    </div>
         <!-- Copyright -->
 
-    </footer>
+        </footer>
+
+    </div>
+    <!---這個是動畫的結尾 不能刪-->
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -381,6 +430,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <!------------- anime.js cdn----------------------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <!------------- enter.js----------------------------- -->
+    <script src="enter.js"></script>
 
 </body>
 
