@@ -77,11 +77,7 @@ header .input-group>.custom-select:not(:last-child),
 }
 
 
-/* 
-section .img-fluid { 
-padding-top: 505px;
 
-} */
 
 /* <!-- diff : icon --> */
 header .contact_group_mb {
@@ -150,6 +146,17 @@ header .contact_group_mb {
       padding-top: 9px;
   }
 
+}
+
+@media(max-width:650px){
+  header #logo_title{
+    font-size: 1.5rem;
+  }
+}
+@media(max-width:576px){
+  header #logo_title{
+    font-size: 1rem;
+  }
 }
 
 /* footer */
