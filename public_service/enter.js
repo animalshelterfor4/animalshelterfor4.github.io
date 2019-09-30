@@ -50,7 +50,7 @@ var myVar;
         anime({
             targets: '.ml8 .circle-dark-dashed',
             rotateZ: 360,
-            duration: 8000,
+            duration: 3000,
             easing: "linear",
             loop: true
         });

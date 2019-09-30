@@ -412,6 +412,10 @@
     font-size: 1rem;
     text-align: left;
   }
+  #lost #lulu{
+    height: 200px;
+    object-fit: cover;
+  }
 
   /* --------------------------------協尋日誌 */
 
@@ -930,7 +934,7 @@
         <div class="swiper-slide">
           <div class="card">
             <div style="overflow: hidden; height: 200px;">
-              <img class="w-100 img-fluid" src="img/lost_pic3.jpg" alt="">
+              <img id="lulu" class="w-100 img-fluid" src="img/lost_pic3.jpg" alt="">
             </div>
             <div class="card-body">
               <ul style="list-style: none;">
@@ -1183,6 +1187,12 @@
 
 
 
+  <!------------- anime.js cdn----------------------------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <!------------- enter.js----------------------------- -->
+  <script src="enter.js"></script>
+
+
 
   <!-- ---------------------------------------bootstrap cdn---- -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -1194,22 +1204,16 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-  <!--------------swiper js cdn----------------------------- -->
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
-  <!------------- anime.js cdn----------------------------- -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-  <!------------- enter.js----------------------------- -->
-  <script src="enter.js"></script>
+
   <!-- --------------aos.js cdn----------------------- -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
   <!-------------aos.js initial--------------  -->
   <script>
     AOS.init();
   </script>
-
+  <!--------------swiper js cdn----------------------------- -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container-link', {
