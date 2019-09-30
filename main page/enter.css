@@ -67,12 +67,20 @@ h1.ml8 {
     height: 2.3em;
 }
         /* Add animation to "page content" */
+
+#loader{
+    z-index: 1040;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}        
 .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 1s;
     animation-name: animatebottom;
-    animation-duration: 1s
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes animatebottom {
